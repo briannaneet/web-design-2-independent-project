@@ -16,3 +16,52 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  margin: 0;
+}
+
+.navigation {
+
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  /* display: none; */
+}
+
+/* .nav-check:checked ~ .nav {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-check:checked ~ .nav li {
+  display: block;
+  text-align: center;
+} */
+
+.nav li {
+  display: block;
+  background-color: #9CDAD0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-label {
+  cursor: pointer;
+}
