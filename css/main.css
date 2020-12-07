@@ -23,29 +23,31 @@ body {
   margin: 0;
 }
 
-.nav-bar {
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap; /* Set a width to logo and nav-label to push navigatio list to next line */
 }
 
 .nav {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  /* display: none; */
+  display: none;
+  width: 100%; /* Because of flex-wrap, will be forced onto next line and take up width of the screen */
 }
 
-/* .nav-check:checked ~ .nav {
+.nav-check:checked ~ .nav {
   display: block;
   list-style-type: none;
   padding: 0;
-} */
+}
 
-/* .nav-check:checked ~ .nav li {
+.nav-check:checked ~ .nav li {
   display: block;
   text-align: center;
-} */
+}
 
 .nav li {
   display: block;
@@ -68,4 +70,18 @@ body {
 
 .nav-label {
   cursor: pointer;
+  text-align: right;
+}
+
+.logo, .nav-label {
+  width: 50%;
+}
+
+.logo {
+  width: 42px;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
 }
