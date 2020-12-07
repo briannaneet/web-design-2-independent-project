@@ -49,6 +49,10 @@ body {
   text-align: center;
 }
 
+.nav-check:checked ~ .nav-label {
+  background-position: center bottom;
+}
+
 .nav li {
   display: block;
   background-color: #9CDAD0;
@@ -71,15 +75,23 @@ body {
 .nav-label {
   cursor: pointer;
   text-align: right;
-}
-
-.logo, .nav-label {
-  width: 50%;
+  background-image: url(../images/toggle-nav-icons.svg);
+  background-size: 30px auto;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #007777;
 }
 
 .logo {
   width: 42px;
   height: auto;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 h1 {
