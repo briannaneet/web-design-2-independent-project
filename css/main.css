@@ -69,6 +69,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   color: #007777;
+  display: block;
 }
 
 .nav-check {
