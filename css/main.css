@@ -59,7 +59,6 @@ body {
   background-color: #fcf7f8;
   width: 100%;
   text-align: center;
-  padding: 15px;
   border-width: 0 0 1px 0;
   border-color: #9cdad0;
   border-style: solid;
@@ -70,6 +69,8 @@ body {
   text-decoration: none;
   color: #007777;
   display: block;
+  width: 100%;
+  padding: 15px;
 }
 
 .nav-check {
@@ -92,6 +93,12 @@ body {
   color: #007777;
 }
 
+.nav a:hover {
+  color: #ff6b6b;
+}
+
+.nav a:hover
+
 .logo {
   width: 42px;
   height: auto;
@@ -109,9 +116,11 @@ h1 {
 }
 
 .banner-img {
-  min-width: 320px;
-  max-width: 608px;
+  width: 100%;
+  display: block;
   object-fit: cover;
+  position: absolute;
+  overflow: hidden;
 }
 
 .banner-text h2, p {
@@ -122,6 +131,10 @@ h1 {
 .banner-text h2 {
   margin-top: 40px;
   align-items: center;
+}
+
+.banner-text {
+  position: relative;
 }
 
 .btn {
@@ -137,4 +150,49 @@ h1 {
 
 .btn:hover {
   background-color: #ff6b6b;
+}
+
+@media only screen and (min-width: 25em) {
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .nav {
+    display: inline-block;
+    width: 50%;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .nav-check {
+    display: none;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav li {
+    width: auto;
+    display: inline-block;
+    background-color: #9cdad0;
+  }
+
+  .nav li a {
+    display: inline-block;
+  }
+
+  .nav li:hover {
+    background-color: #fcf7f8;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+@media only screen and (min-width: 90em) {
+
 }
